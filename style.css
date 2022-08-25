@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Epílogo:wght@500;700 & family= Inter:wght@100;200;300;400; 500;600;700;800;900 & family= Lexend+Deca:wght@100;200;300;400;500;600;700;800;900 & family= Montserrat+Alternates:ital,wght@0,100;0,200; 0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & family= Open+Sans:wght@300 & family= Outfit:wght@100; 200;300;400;500;600;700;800;900 & família= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500& display=trocar');
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epílogo', sans-serif;
+}
+
+a {
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+li button {
+    color: hsl(0, 0%, 41%);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Cabeçalho */
+
+#header {
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    background: hsl(0, 0%, 98%);
+}
+
+.logo {
+    max-width: 70px;
+    max-height: 13px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+#menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#menu button {
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+    cursor: pointer;
+}
+
+#botao-mobile {
+    display: none;
+}
+
+
+.loginRegister {
+    display: flex;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    flex-direction: row;
+    column-gap: 8px;
+    position: relative;
+    left: 340px;
+    cursor: pointer;
+}
+
+.login {
+    border: solid 2px hsla(0, 0%, 41%, 0);
+    border-radius: 11px;
+    padding: 8px 24px 8px 24px;
+}
+
+.register {
+    border: solid 2px hsl(0, 0%, 41%);
+    border-radius: 11px;
+    padding: 8px 30px 8px 30px;
+}
+
+
+
+
+
+/* Nav menu horizontal */
+
+
+#mini-menu-1 {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    padding-top:6px;
+}
+
+#mini-menu-2 {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+#menu.openA .miniMenuA {
+    height: 120px;
+    visibility: visible;
+}
+
+.miniMenuA {
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    row-gap: 5px;
+    top: 60px;
+    left: 120px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    height: 0px;
+    width: 116px;
+    align-items: center;
+    padding-top: 7px;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.miniMenuA a {
+    font-size: 11px;
+}
+
+.miniMenuB {
+    transition: 0.8s;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    row-gap: 5px;
+    top: 60px;
+    left: 220px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    height: 0px;
+    width: 90px;
+    align-items: center;
+    padding-top: 7px;
+    visibility: hidden;
+    overflow: hidden;
+
+}
+
+#menu.openB .miniMenuB {
+    height: 90px;
+    visibility: visible;
+}
+
+.miniMenuB a {
+    font-size: 12px;
+}
+
+/* Arco do nav menu horizontal */
+
+#menu.openA #arow-downA{
+    display:none;
+}
+#menu.openB #arow-downB{
+    display:none;
+}
+#arow-upA{
+    display:none;
+}
+#arow-upB{
+    display:none;
+}
+#menu.openA #arow-upA{
+    display:block;
+}
+#menu.openB #arow-upB{
+    display:block;
+}
+
+/* conteúdo principal */
+
+main {
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 60px;
+    max-width: 40%;
+    min-width: 40%;
+    padding-right: 45px;
+}
+
+
+
+
+.fonte {
+    row-gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fonte p {
+    color: hsl(0, 0%, 41%);
+    width: 340px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.fonte a {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 115px;
+    height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonte h1 {
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.img {
+    max-width: 400px;
+    max-height: 500px;
+    min-width: 400px;
+    min-height: 500px;
+    padding-left: 45px;
+    padding-top: 40px;
+}
+
+.img img {
+    max-width: 120%;
+    max-height: 100%;
+}
+
+.client {
+    display: flex;
+    max-width: 80px;
+    max-height: 17px;
+    min-width: 80px;
+    min-height: 17px;
+    column-gap: 20px;
+
+}
+
+.client img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img2 {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+    /* Botão harmbuguer */
+    #x {
+        display: none;
+        position: relative;
+        left: 290px;
+        z-index: 3000;
+    }
+
+    #hamburger {
+        position: relative;
+        left: 290px;
+        z-index: 3000;
+    }
+
+    #nav.active #hamburger {
+        display: none;
+
+    }
+
+    #nav.active #x {
+        display: block;
+    }
+
+    #botao-mobile {
+        display: flex;
+        padding-right: 0px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* A tela ficará cinza do abrir o menu mobile */
+
+    #gray.acitive #sessao{
+        filter: grayscale(2);
+        transition: 1s;
+    }
+
+    /* Menu de navegação mobile*/
+
+    #menu {
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: hsl(0, 0%, 98%);
+        transition: 0.8s;
+        height: 200vh;
+        width: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: baseline;
+        row-gap: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 100px;
+        z-index: 2000;
+    }
+
+
+    #nav.active #menu {
+        width: 35%;
+        visibility: visible;
+    }
+
+    #menu li {
+        position: relative;
+        left: 25px;
+        top: 0px;
+    }
+
+    #menu.openA .miniMenuA {
+        height: 120px;
+        visibility: visible;
+    }
+
+    .miniMenuA {
+        transition: 1s;
+        flex-direction: column;
+        position: static;
+        row-gap: 5px;
+        top: 60px;
+        left: 0px;
+        background-color: hsl(0, 0%, 98%);
+        border-radius: 7px;
+        height: 0;
+        width: 116px;
+        align-items: baseline;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    .miniMenuA a {
+        font-size: 12px;
+
+    }
+
+    .miniMenuB {
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        row-gap: 5px;
+        top: 60px;
+        left: 220px;
+        background-color: hsl(0, 0%, 98%);
+        border-radius: 7px;
+        height: 0px;
+        width: 90px;
+        align-items: baseline;
+        padding-top: 7px;
+        visibility: hidden;
+        overflow: hidden;
+
+    }
+
+    #menu.openB .miniMenuB {
+        height: 90px;
+        visibility: visible;
+    }
+
+    .miniMenuB a {
+        font-size: 12px;
+    }
+
+    .detalhe {
+        padding-bottom: 10px;
+    }
+    #mini-menu-1 {
+        padding: bottom 4px;
+    }
+    /* menu de Login e cadastramento mobile */
+
+    
+    .loginRegister {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        left: -5px;
+        top: 25px;
+    }
+    .login {
+        border: solid 2px hsla(0, 0%, 41%, 0);
+        border-radius: 11px;
+        padding: 10px 53px 10px 53px;
+    }
+
+    .register {
+        border: solid 2px hsl(0, 0%, 41%);
+        border-radius: 11px;
+        padding: 10px 45px 10px 45px;
+    }
+
+    .login:hover {
+        border: solid 2px hsla(0, 0%, 41%, 0);
+        border-radius: 11px;
+        padding: 10px 53px 10px 53px;
+    }
+
+    .register:hover {
+        border: solid 2px hsl(0, 0%, 41%);
+        border-radius: 11px;
+        padding: 10px 45px 10px 45px;
+    }
+
+
+    /* Conteudo principal mobile */
+
+    .img {
+        display: none;
+    }
+
+    .img2 {
+        display: flex;
+        max-width: 100%;
+        max-height: 45%;
+        min-width: 100%;
+        min-height: 45%;
+    }
+
+    .img2 img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    main {
+        height: 150vh;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .fonte {
+        row-gap: 45px;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 190%;
+    }
+
+    .fonte h1 {
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    .fonte p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .fonte a {
+        width: 135px;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .client {
+        position: absolute;
+        top: 394px;
+        left: 30%;
+        height: 50px;
+        column-gap: 42px;
+    }
+
+
+
+   
+
+
+}
