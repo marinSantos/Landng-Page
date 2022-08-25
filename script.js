@@ -8,7 +8,7 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+
 
 //Configuração do menu da opção Features
 const menuA = document.getElementById('mini-menu-1');
@@ -19,7 +19,6 @@ function miniMenuA() {
 }
 
 menuA.addEventListener('click', miniMenuA);
-menuA.addEventListener('touchstart', miniMenuA);
 
 //Configuração do menu da opção Company
 const menuB = document.getElementById('mini-menu-2');
@@ -30,13 +29,5 @@ function miniMenuB() {
 }
 
 menuB.addEventListener('click', miniMenuB);
-menuB.addEventListener('touchstart', miniMenuB);
-
-
-
-
-
-
-
 
 
