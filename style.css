@@ -100,7 +100,7 @@ li button {
     display: flex;
     align-items: center;
     column-gap: 3px;
-    padding-top:6px;
+    padding-top: 6px;
 }
 
 #mini-menu-2 {
@@ -108,6 +108,7 @@ li button {
     align-items: center;
     column-gap: 3px;
 }
+
 #menu.openA .miniMenuA {
     height: 120px;
     visibility: visible;
@@ -143,46 +144,47 @@ li button {
     position: absolute;
     row-gap: 5px;
     top: 60px;
-    left: 220px;
+    left: 240px;
     background-color: whitesmoke;
     border-radius: 7px;
     height: 0px;
     width: 90px;
-    align-items: center;
     padding-top: 7px;
     visibility: hidden;
     overflow: hidden;
-
+    align-content: center;
 }
 
 #menu.openB .miniMenuB {
-    height: 90px;
+    height: 87px;
     visibility: visible;
 }
 
-.miniMenuB a {
-    font-size: 12px;
-}
 
 /* Arco do nav menu horizontal */
 
-#menu.openA #arow-downA{
-    display:none;
+#menu.openA #arow-downA {
+    display: none;
 }
-#menu.openB #arow-downB{
-    display:none;
+
+#menu.openB #arow-downB {
+    display: none;
 }
-#arow-upA{
-    display:none;
+
+#arow-upA {
+    display: none;
 }
-#arow-upB{
-    display:none;
+
+#arow-upB {
+    display: none;
 }
-#menu.openA #arow-upA{
-    display:block;
+
+#menu.openA #arow-upA {
+    display: block;
 }
-#menu.openB #arow-upB{
-    display:block;
+
+#menu.openB #arow-upB {
+    display: block;
 }
 
 /* conteúdo principal */
@@ -205,7 +207,7 @@ section {
     row-gap: 60px;
     max-width: 40%;
     min-width: 40%;
-    padding-right: 45px;
+
 }
 
 
@@ -216,6 +218,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
 }
 
 .fonte p {
@@ -227,18 +230,9 @@ section {
     font-weight: 600;
 }
 
-.fonte a {
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    width: 115px;
-    height: 38px;
-    font-size: 13px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
 
 .fonte h1 {
     font-size: 60px;
@@ -259,12 +253,31 @@ section {
     max-height: 100%;
 }
 
-.client {
+.bloks {
+    position: relative;
     display: flex;
-    max-width: 80px;
-    max-height: 17px;
-    min-width: 80px;
-    min-height: 17px;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.div a {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 115px;
+    height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.client {
+    max-height: 20%;
+    max-width: 30%;
+    display: flex;
     column-gap: 20px;
 
 }
@@ -283,7 +296,7 @@ section {
 
 
 
-@media (max-width: 740px) {
+@media (max-width: 851px) {
 
     /* Botão harmbuguer */
     #x {
@@ -320,7 +333,7 @@ section {
 
     /* A tela ficará cinza do abrir o menu mobile */
 
-    #gray.acitive #sessao{
+    #gray.acitive #sessao {
         filter: grayscale(2);
         transition: 1s;
     }
@@ -349,7 +362,7 @@ section {
 
 
     #nav.active #menu {
-        width: 35%;
+        width: 34%;
         visibility: visible;
     }
 
@@ -416,43 +429,39 @@ section {
     .detalhe {
         padding-bottom: 10px;
     }
+
     #mini-menu-1 {
         padding: bottom 4px;
     }
+
     /* menu de Login e cadastramento mobile */
 
-    
+
     .loginRegister {
         position: relative;
         flex-direction: column;
         row-gap: 10px;
         align-items: center;
-        left:3%;
         top: 4%;
+        right: 6%;
+
     }
+
     .login {
         border: solid 2px hsla(0, 0%, 41%, 0);
         border-radius: 11px;
         padding: 10px 53px 10px 53px;
+
     }
 
     .register {
         border: solid 2px hsl(0, 0%, 41%);
         border-radius: 11px;
         padding: 10px 45px 10px 45px;
+
     }
 
-    .login:hover {
-        border: solid 2px hsla(0, 0%, 41%, 0);
-        border-radius: 11px;
-        padding: 10px 53px 10px 53px;
-    }
 
-    .register:hover {
-        border: solid 2px hsl(0, 0%, 41%);
-        border-radius: 11px;
-        padding: 10px 45px 10px 45px;
-    }
 
 
     /* Conteudo principal mobile */
@@ -463,7 +472,7 @@ section {
 
     .img2 {
         display: block;
-     
+
     }
 
     .img2 img {
@@ -471,49 +480,99 @@ section {
         max-height: 100%;
     }
 
-    main {
-        height: 150vh;
-    }
 
     section {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .main {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20%;
     }
 
     .fonte {
         row-gap: 45px;
         align-items: center;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 30%;
         width: 190%;
+        flex-wrap: wrap;
     }
 
     .fonte h1 {
         font-size: 40px;
         padding-top: 30px;
+        display: block;
     }
 
     .fonte p {
         font-size: 17px;
         text-align: center;
+        width: auto;
+        display: block;
     }
 
-    .fonte a {
-        width: 135px;
-        height: 48px;
-        font-size: 15px;
+
+
+    .bloks {
+        align-items: center;
+        top: 255px;
+        row-gap: 70px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .div a {
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        width: 115px;
+        height: 38px;
+        font-size: 13px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div {
+        padding-left: 137%;
     }
 
     .client {
-        position: absolute;
-        top: 394px;
-        left: 30%;
-        height: 50px;
-        column-gap: 42px;
+        max-height: 5%;
+        max-width: 40%;
+        display: flex;
+        column-gap: 20px;
+
+    }
+
+
+
+}
+
+@media (max-width: 467px) {
+    .register {
+        border: solid 2px hsla(0, 0%, 41%, 0);
+
+
+    }
+
+    .loginRegister {
+        right: 30%;
+
+    }
+
+    .fonte {
+        top: 10%;
+    }
+
+    .fonte h1 {
+        font-size: 30px;
     }
 }
