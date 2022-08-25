@@ -303,14 +303,14 @@ section {
         display: none;
         position: absolute;
         right: 7%;
-        top: 6%;
+        top: 5%;
         z-index: 3000;
     }
 
     #hamburger {
         position: absolute;
         right: 7%;
-        top: 6%;
+        top: 5%;
         z-index: 3000;
     }
 
