@@ -29,4 +29,4 @@ function miniMenuB() {
   menu.classList.toggle('openB');
 }
 menuB.addEventListener('click', miniMenuB);
-menuB.addEventListener('toachstart', miniMenuB);
+menuB.addEventListener('toachstart', miniMenuB)
