@@ -7,6 +7,39 @@
     box-sizing: border-box;
     font-family: 'Epílogo', sans-serif;
 }
+body {
+    background-color: hsl(0, 0%, 98%) !important;
+
+}
+.transparent img{
+display: none;
+}
+.alternar {
+   display: flex;
+    height: 30px;
+    position: absolute;
+    bottom:0px;
+    height: 60px;
+    width: 100%;
+    padding: 10px 100px;
+    justify-content: space-between;
+    
+}
+.atual{
+    border-bottom: solid black;
+    
+}
+.alternar a{
+   font-size: 18px;
+   display: flex;
+   width: 30px;
+   justify-content: center;
+}
+.alternar  img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
 
 a {
     color: hsl(0, 0%, 41%);
@@ -189,14 +222,15 @@ li button {
 
 /* conteúdo principal */
 
-body {
-    background-color: hsl(0, 0%, 98%);
-    height: 100vh;
-}
+
 
 section {
     display: flex;
     justify-content: space-evenly;
+}
+
+main {
+    padding: 0 123px;
 }
 
 .main {
@@ -205,8 +239,8 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
     row-gap: 60px;
-    max-width: 40%;
-    min-width: 40%;
+    width: 100%;
+   
 
 }
 
@@ -214,11 +248,10 @@ section {
 
 
 .fonte {
+    width: 80%;
     row-gap: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-
 }
 
 .fonte p {
@@ -275,16 +308,16 @@ section {
 
 
 .client {
-    max-height: 20%;
-    max-width: 30%;
+    height: 30px;
+    width: 100%;
     display: flex;
     column-gap: 20px;
 
 }
 
 .client img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 140px;
+    max-height: 30px;
 }
 
 .img2 {
@@ -297,7 +330,9 @@ section {
 
 
 @media (max-width: 851px) {
-
+    .alternar {
+         position: static;   
+     }
     /* Botão harmbuguer */
     #x {
         display: none;
@@ -336,6 +371,7 @@ section {
     #gray.acitive #sessao {
         filter: grayscale(2);
         transition: 1s;
+        width: 100%;
     }
 
     /* Menu de navegação mobile*/
@@ -483,31 +519,39 @@ section {
 
     section {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
+        align-items: center;
         justify-content: center;
+        width: 100% !important;
+
+    }
+
+    main {
+        padding: 0px 0px;
     }
 
     .main {
-        position: relative;
+        position: static;
         display: flex;
         flex-direction: column;
         row-gap: 20%;
+        padding: 80px 80px;
+
+
     }
 
     .fonte {
         row-gap: 45px;
-        align-items: center;
-        position: absolute;
-        top: 40%;
-        left: 30%;
-        width: 190%;
+        position: static;
         flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
     }
 
     .fonte h1 {
         font-size: 40px;
-        padding-top: 30px;
         display: block;
+   
     }
 
     .fonte p {
@@ -520,11 +564,13 @@ section {
 
 
     .bloks {
+        padding: 50px 0;
+       flex-direction: column;
+        position: static;
+        row-gap: 40px;
+        width: 100%;
+      
         align-items: center;
-        top: 255px;
-        row-gap: 70px;
-        padding-top: 40px;
-        padding-bottom: 80px;
     }
 
     .div a {
@@ -536,22 +582,23 @@ section {
         font-size: 13px;
         font-weight: 600;
         display: flex;
-        justify-content: center;
-        align-items: center;
+     
     }
 
-    .div {
-        padding-left: 137%;
-    }
 
     .client {
-        max-height: 5%;
-        max-width: 40%;
+        height: 30px;
+        width: 100%;
         display: flex;
-        column-gap: 20px;
-
+        align-items: center;
+        justify-content: center;
+    
     }
-
+    
+    .client img {
+        width: 100%;
+        max-height: 30px;
+    }
 
 
 }
@@ -574,5 +621,10 @@ section {
 
     .fonte h1 {
         font-size: 30px;
+    }   
+
+    .client img {
+        max-width: 70px;
+        max-height: 30px;
     }
 }
